@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container {
+  height: 100svh; 
+  overflow-y: hidden;
+}
+
+header {
+  height: 3.5rem;
+  outline: 1px solid #c4c4c4;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  letter-spacing: 4px;
+}
+
+main {
+  padding: 5rem;
+  overflow-y: auto;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 4rem;
+  align-items: center;
+  gap: 1rem;
+  outline: 1px solid yellow;
+  padding: 1rem;
+}
+
+input {
+  padding: 1rem;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.enter {
+  padding: 1rem;
+}
+
+.todos-container {
+  outline: 1px solid blue;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.todo {
+  outline: 1px solid red;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all;
+}
+
+.todo:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
